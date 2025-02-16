@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tours and Travels</title>
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <p class="title">THRILLERPORT</p>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="https://www.makemytrip.com/holidays-india/" target="_blank">PACKAGES</a></li>
+                        <li><a href="https://www.hotelscombined.in/Place/Mumbai.htm">BOOK HOTEL</a></li>
+                        <li id="contact">CONTACT US</li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="col">
+                <div class="row row1">
+                    <h1>EXPLORE<br>TRAVEL</h1><br>
+                    
+                </div>
+                <div class="row row3">
+                    <p>Enthusiastically extend<br> extensive customer service <br>before best breed converges completely.</p>
+                </div>
+                <div class="row row2">
+                    <div class="card card1">
+                        <a href="wb.html" class="fill-div">
+                        <h2>West Bengal</h2>
+                        <p><strong>⭐⭐⭐⭐</strong><br>A natural beauty to visit during winters.</p>
+                        </a>
+                    </div>
+                    <div class="card card2">
+                        <a href="maha.html" class="fill-div">
+                            <h2 style="color:crimson">Maharashtra</h2>
+                            <p><strong>⭐⭐⭐⭐⭐</strong><br>A natural beauty to visit at all times.</p>
+                            </a>
+                    </div>
+                    <div class="card card3">
+                        <a href="rajas.html" class="fill-div">
+                            <h2 style="color: black;">Rajasthan</h2>
+                            <p style="color:black;"><strong style="color: black;">⭐⭐⭐⭐</strong><br>A natural beauty to visit during winters.</p>
+                            </a>
+                    </div>
+                    <div class="card card4">
+                        <a href="megh.html" class="fill-div">
+                            <h2 style="color:darkblue">Meghalaya</h2>
+                            <p><strong>⭐⭐⭐⭐</strong><br>A natural beauty to visit during autumns.</p>
+                            </a>
+                    </div>
+                    <div class="card card5">
+                        <a href="sikk.html" class="fill-div">
+                            <h2 style="color:darkmagenta">Sikkim</h2>
+                            <p><strong>⭐⭐⭐⭐</strong><br>A natural beauty to visit during summer.</p>
+                            </a>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div id="myPopup" class="popup">
+            <div class="popup-content">
+                <h1 style="color: darkred;">
+                    Contact us at:
+                </h1>
+                <br>
+                <p>
+                    Address:<br>
+                    33/6, Wood Arch Bldg, Sher E Punjab Society,<br>
+                    Off Mahakali Caves Road, Andheri (e),<br>
+                    Mumbai-400093, Maharashtra<br><br>
+                    Email: toursandtravels@hotmail.com<br><br>
+                    Phone: 022 28264585<br><br>
+
+                </p>
+                <button id="closePopup">
+                    Close
+                </button>
+            </div>
+        </div>
+        <script>
+            contact.addEventListener("click", function () {
+                myPopup.classList.add("show");
+            });
+            closePopup.addEventListener("click", function () {
+                myPopup.classList.remove("show");
+            });
+            window.addEventListener("click", function (event) {
+                if (event.target == myPopup) {
+                    myPopup.classList.remove("show");
+                }
+            });
+        </script>
+        
+
+    </body>
+
+</html>
